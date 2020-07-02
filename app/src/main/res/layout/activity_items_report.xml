@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    sweet:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dateLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_5dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_shape"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_shape_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="From Date"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="To Date"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/fromDateTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape_bg"
+                            android:cursorVisible="true"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/size_5dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/toDateTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape_bg"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/size_5dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/showTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanguler_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/size_8dp"
+                        android:text="Show Details"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_3dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="Sno."
+                android:textColor="@color/final_purple"
+                android:textSize="@dimen/size_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:text="Item Name"
+                android:textColor="@color/final_purple"
+                android:textSize="@dimen/size_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="Qty"
+                android:textColor="@color/final_purple"
+                android:textSize="@dimen/size_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="Amount"
+                android:textColor="@color/final_purple"
+                android:textSize="@dimen/size_15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/final_purple" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemsReportRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/bottomLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/size_2dp"
+                        android:gravity="bottom|center_vertical|center_horizontal|center"
+                        android:text="Total Qty"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="12dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/totalQuantityTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/size_2dp"
+                            android:background="@drawable/rectangle_shape_bg"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:padding="@dimen/size_2dp"
+                            android:textColor="@color/dark_purple"
+                            android:textColorHint="@color/gray"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        
+                    </RelativeLayout>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/size_2dp"
+                        android:gravity="bottom|center_vertical|center_horizontal|center"
+                        android:text="Total Amount"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/totalAmountTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/size_2dp"
+                        android:background="@drawable/rectangle_shape_bg"
+                        android:gravity="center"
+                        android:hint="0.0"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/size_2dp"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/exportImageView"
+                        android:layout_width="@dimen/font_size30"
+                        android:layout_height="@dimen/font_size30"
+                        android:layout_marginLeft="@dimen/size_10dp"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:src="@drawable/excel_icon"
+                        android:tint="@color/dark_purple" />
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

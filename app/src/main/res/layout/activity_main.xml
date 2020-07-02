@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10dp"
+            android:text="RV TAX SOLUTIONS"
+            android:textColor="@color/dark_purple"
+            android:textSize="30sp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_rectanguler_bg"
+            android:hint="Username"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/size_15dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20dp"
+            sweet:hintEnabled="false"
+            sweet:passwordToggleEnabled="true"
+            sweet:passwordToggleTint="@color/gray">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:paddingStart="@dimen/size_14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/size_15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progress_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/passwordEditText"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectanguler_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/size_14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTextView"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/signupTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_5dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_2dp"
+                    android:paddingTop="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_2dp"
+                    android:paddingBottom="@dimen/size_10dp"
+                    android:text="SignUp"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/forgetPasswordTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_2dp"
+                    android:paddingTop="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_2dp"
+                    android:paddingBottom="@dimen/size_10dp"
+                    android:text="Forgot password ?"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_12dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/buyPlanTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_2dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_2dp"
+            android:paddingBottom="@dimen/size_10dp"
+            android:text="Developed By: ULTRONYC"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/size_12dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_purple"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/daysLeftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@drawable/rounded_border_circle"
+            android:gravity="end"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/daysLeftTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="28"
+                    android:textSize="@dimen/font_size16"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="   Days Left   "
+                    android:textSize="@dimen/font_size12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/nav_header_vertical_spacing">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="@dimen/size_70dp"
+                    android:layout_height="@dimen/size_70dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:src="@drawable/usericon" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/drawerFirmTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoRelativeLayout"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="@dimen/size_5dp"
+            android:text=""
+            android:textSize="@dimen/size_14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/drawerUserNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawerFirmTitleTextView"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="@dimen/size_5dp"
+            android:text=""
+            android:textSize="@dimen/size_14dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/drawerUserMobileTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawerUserNameTextView"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="@dimen/size_5dp"
+            android:text=""
+            android:textSize="@dimen/size_12dp" />
+
+        <LinearLayout
+            android:id="@+id/syncUserDetailsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawerUserMobileTextView"
+            android:background="@drawable/button_selector"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="@dimen/size_6dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:src="@drawable/sync_blue"
+                    android:tint="@color/dark_purple" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:text="Sync User Details"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/syncUserDetailsLinearLayout"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/sendDataToServerLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_2dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector_dark_orange"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_20dp"
+                            android:layout_height="@dimen/size_40dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/send_data" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:gravity="left|center_vertical|center_horizontal|center"
+                            android:text="Send data to server"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/getDataFromServerLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_2dp"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector_dark_blue"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_20dp"
+                            android:layout_height="@dimen/size_20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/get_data" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:gravity="left|center_vertical|center_horizontal|center"
+                            android:text="Get data from server"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

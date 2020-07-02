@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/all_cardview_main_id"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:id="@+id/category_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/item_Name_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:paddingStart="7dp"
+                                android:text="Item Name"
+                                android:textColor="#60328a"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/brand_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_Name_itemlist"
+                                android:padding="3dp"
+                                android:paddingStart="7dp"
+                                android:text="Brand"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_Name_itemlist"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/unit_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/brand_itemlist"
+                                android:padding="3dp"
+                                android:paddingStart="7dp"
+                                android:text="Unit"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/brand_itemlist"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tax_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/unit_itemlist"
+                                android:padding="3dp"
+                                android:paddingStart="7dp"
+                                android:text="Tax (%)"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/unit_itemlist"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/ittemNameValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Item Name"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/brandValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Brand"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/unitValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Unit"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/taxValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Tax"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/updateButton_itemList"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/lr_rounded_buttonshape"
+                        android:text="Update"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/type_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="Type"
+                                android:textColor="#60328a"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/group_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/type_itemlist"
+                                android:padding="3dp"
+                                android:text="Group"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/type_itemlist"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/rate_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/group_itemlist"
+                                android:padding="3dp"
+                                android:text="Rate"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/group_itemlist"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/mrp_itemlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rate_itemlist"
+                                android:padding="3dp"
+                                android:text="MRP"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rate_itemlist"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:text=":"
+                                android:textColor="#60328a"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/typeValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Type"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/groupValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Group"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/rateValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Rate"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/mrpValue_itemlist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="MRP"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/deleteButton_itemList"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/lr_rounded_buttonshape"
+                        android:text="Delete"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

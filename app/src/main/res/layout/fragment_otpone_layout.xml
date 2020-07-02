@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".FragmentOtpOne">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!--<ImageView
+            android:id="@+id/image_Otp"
+            android:layout_width="295dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:src="@drawable/otp_image" />-->
+
+        <!--<EditText
+            android:id="@+id/otp_editext"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edtextshape"
+            android:gravity="center"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:padding="10dp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the code that was sent to"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/numTextviewOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="9503696428"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:paddingBottom="25dp"/>
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/otp_edt1"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:background="@drawable/otpbox_shape"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/otp_edt2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:background="@drawable/otpbox_shape"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/otp_edt3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:background="@drawable/otpbox_shape"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/otp_edt4"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:background="@drawable/otpbox_shape"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp">
+
+            <Button
+                android:id="@+id/btn_otpDismiss"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/redbuttonshape"
+                android:gravity="center"
+                android:text="Dismiss"
+                android:layout_marginEnd="6dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_otpRegister"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/buttonshape2"
+                android:gravity="center"
+                android:text="Register"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/didntGetOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="I didn't get a code."
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP is only valid for 5 minutes."
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Time Remaining: "
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/timerTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_otpFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

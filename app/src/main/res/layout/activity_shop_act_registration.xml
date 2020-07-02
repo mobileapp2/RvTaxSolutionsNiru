@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <ScrollView
+        android:id="@+id/SHOPACT_scrollmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="SHOPACT REGISTRATION"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Full Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/SHOPACT_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Full Name"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Mobile no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/SHOPACT_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Mobile Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/SHOPACT_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Address"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Email"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/SHOPACT_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Pan Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/SHOPACT_pannumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Pan Number"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Aadhar Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/SHOPACT_addharnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Aadhar Number"
+                android:imeOptions="actionDone"
+                android:maxLength="12"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Trading Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/SHOPACT_trading_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Trading Name"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingTop="17dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="3dp"
+            android:text="Select Business Nature"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:id="@+id/BnatureLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/BnatureRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BnatureLinearLayout">
+
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/businessnaturespinner_SHOPACT"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_rectanguler_bg"
+                        android:hint="Business Nature"
+                        android:imeOptions="actionNext"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/size_14dp"
+                        >
+
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <ProgressBar
+                        android:id="@+id/progress_BnatureSpinner_SHOPACT"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="No Of Employees"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/SHOPACT_employee_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Number Of Employees"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+
+
+            <TextView
+                android:id="@+id/SHOPACT_view_doc_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Required Document List(Click Here)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/SHOPACT_submit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectanguler_bg"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_SHOPACTmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

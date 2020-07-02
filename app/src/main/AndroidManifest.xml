@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ultronyc.rvtaxsolutions">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".Itr_filling.UploadOnlyTDSRefundActivity"></activity>
+        <activity android:name=".Itr_filling.OnlyTdsRefundActivity" />
+        <activity android:name=".MyApplicationActivity" />
+        <activity android:name=".Gst_returns.GstReturnMainActivity" />
+        <activity android:name=".Ptec.PtecMainActivity" />
+        <activity android:name=".Ptec.UploadPtecDocActivity" />
+        <activity android:name=".AbountUsActivity" />
+        <activity android:name=".MyPaymentStatusActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".SuccessPaymentActivity" />
+        <activity android:name=".PaymentStatusActivity" />
+        <activity android:name=".Shopact_registration.UploadShopActRegistrationDocActivity" />
+        <activity android:name=".Project_report_for_loan.ProjectReportLoanMainActivity" />
+        <activity android:name=".Project_report_for_loan.UploadProjectReportLoanDocActivity" />
+        <activity android:name=".Udyog_adhar_registration.UploadUhyodAdharRegistrationDocActivity" />
+        <activity android:name=".Itr_filling.UploadBusinessReturnDocActivity" />
+        <activity android:name=".Gst_registration.UploadGstRegistrationDocActivity" />
+        <activity android:name=".Itr_filling.UploadSalaryReturnDocActivity" />
+        <activity android:name=".Itr_filling.UploadPensionReturnDocActivity" />
+        <activity android:name=".Itr_filling.UploadHousePropertyDocActivity" />
+        <activity android:name=".Itr_filling.BusinessReturnDocActivity" />
+        <activity android:name=".Itr_filling.HousePropertyActivity" />
+        <activity android:name=".Itr_filling.CapitalGainActivity" />
+        <activity android:name=".Itr_filling.PensionReturnActivity" />
+        <activity android:name=".Itr_filling.SalaryReturnActivity" />
+        <activity android:name=".Itr_filling.BusinessReturnActivity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".Stratup_consultation.StartUpConsultationActivity" />
+        <activity android:name=".Income_tax_notice.IncomeTaxNoticeActivity" />
+        <activity android:name=".Income_tax_notice.UploadIncomeTaxNoriceDocActivity" />
+        <activity android:name=".Udyog_adhar_registration.UdyogAdharRegistrationActivity" />
+        <activity android:name=".Shopact_registration.ShopActRegistrationActivity" />
+        <activity android:name=".Gst_registration.GstRegistrationMainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Itr_filling.IteFillingMainActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".CustomerListActivity" />
+        <activity android:name=".paymentMainactivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StartupScreenActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.novoda.merlin.MerlinService"
+            android:exported="false" />
+    </application>
+
+</manifest>

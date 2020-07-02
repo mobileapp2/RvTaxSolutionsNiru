@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <ScrollView
+        android:id="@+id/PROJECTREPORT_mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="ABOUT US"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="We Are Online Tax Consulting Service Provider Firm Located At Office No 105 City Point, Pune
+Saswad Road , Opp HDFC Bank Bekrainagar Phursungi, Pune 412308."
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="We Provide GST, Income Tax, &amp; All Other Business Services"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="Office Timing 11 AM To 7 PM"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/text_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="Mob : +91-9075523183"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="Email: rvtax1616@gmail.com"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:text="Website : http://www.rvtaxs.com/"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+
+        android:layout_alignParentBottom="true"
+        android:paddingRight="@dimen/dimen_10dp">
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/whatsapp"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/facebook"></ImageView>
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube"></ImageView>
+        <ImageView
+            android:id="@+id/gmail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/gmail"></ImageView>
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/instagram"></ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="3dp"
+        android:text="We Are Avalible In:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

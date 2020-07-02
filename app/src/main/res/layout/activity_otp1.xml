@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/mobNoTv"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="Please type the verification code sent to  +91 9503696428"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Verification Code"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobNoTv">
+
+            <EditText
+                android:id="@+id/otp_edt1"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/card_bg"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/otp_edt2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/card_bg"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/otp_edt3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/card_bg"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/otp_edt4"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/card_bg"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitOtpBtn"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/selected_tab_background"
+            android:text="Submit"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lin1" />
+
+        <ProgressBar
+            android:id="@+id/submitProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submitOtpBtn" />
+
+        <TextView
+            android:id="@+id/resendTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Resend"
+            android:textColor="@color/white"
+            android:paddingBottom="0dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submitProgress" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resendTv">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTP is only valid for 5 minutes."
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/timerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:text="Time Remaining: "
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow_icon_white" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="60dp"
+            android:elevation="5dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#F2F7F4"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/otp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

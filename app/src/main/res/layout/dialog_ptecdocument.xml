@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/size_5dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_shape">
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/m10"
+                    android:text="Required Documents"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/pteccloseImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:padding="13dp"
+                    android:src="@drawable/close_new" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/patientDataRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingTop="17dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="3dp"
+                    android:text="* PAN CARD."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingTop="17dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="3dp"
+                    android:text="* ADHAR CARD."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingTop="17dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="3dp"
+                    android:text="* LIGHT BILL."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingTop="17dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="3dp"
+                    android:text="* BANK DETAILS."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingTop="17dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="3dp"
+                    android:text="* PASSPORT SIZE PHOTO."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingTop="17dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="3dp"
+                    android:text=" RENT AGGREMENT."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+android:id="@+id/ptecclose1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectanguler_bg"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/m8"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/m13" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

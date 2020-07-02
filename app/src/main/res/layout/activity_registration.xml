@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_15dp">
+
+            <RelativeLayout
+                android:id="@+id/imageuploadRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/userProfilePicImageView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:padding="@dimen/size_5dp"
+                    android:src="@drawable/usericon" />
+
+                <ImageView
+                    android:id="@+id/addImageIconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userProfilePicImageView"
+                    android:src="@drawable/ic_edit" />
+
+                <TextView
+                    android:id="@+id/selectImageTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userProfilePicImageView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:text="Select Profile Image"
+                    android:textColor="@color/dark_purple"
+                    android:textColorHint="@color/dark_purple" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/firstNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageuploadRelativeLayout"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:hint="First Name *"
+                android:padding="2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp" />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstNameTextView"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/size_14dp" />
+
+            <TextView
+                android:id="@+id/lastNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstNameEditText"
+                android:layout_marginTop="10dp"
+                android:hint="Last Name"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastNameTextView"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/genderTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastNameEditText"
+                android:layout_marginTop="15dp"
+                android:hint="Gender *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/genderRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genderTextView"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_5dp"
+                    android:background="@drawable/ic_keyboard_arrow_down" />
+
+                <Spinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/edittext_rectanguler_bg"
+                    android:padding="8dp"
+                    android:textSize="@dimen/size_14dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dobTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genderRelativeLayout"
+                android:layout_marginTop="10dp"
+                android:hint="Date of Birth *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/dobRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dobTextView"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dateOfBirthTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rectanguler_bg"
+                    android:hint="Date of Birth"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:privateImeOptions="actionNext"
+                    android:textColor="@color/dark_purple"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/size_14dp" />
+
+                <ImageView
+                    android:id="@+id/clearDateOfBirthImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_cancel" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/doaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dobRelativeLayout"
+                android:layout_marginTop="15dp"
+                android:hint="Date of Anniversary"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/doaRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doaTextView"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dateOfAnniversaryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rectanguler_bg"
+                    android:hint="Date of Anniversary"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:privateImeOptions="actionNext"
+                    android:textColor="@color/dark_purple"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/size_14dp" />
+
+                <ImageView
+                    android:id="@+id/clearDateOfAnniversaryImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_cancel" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doaRelativeLayout"
+                android:layout_marginTop="10dp"
+                android:hint="Email *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTextView"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textWebEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/size_14dp" />
+
+            <TextView
+                android:id="@+id/mobileTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailEditText"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile no *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp" />
+
+            <EditText
+                android:id="@+id/mobileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileTextView"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:digits="0123456789"
+                android:hint="Mobile"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/size_14dp" />
+
+
+            <TextView
+                android:id="@+id/countryHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileEditText"
+                android:layout_marginTop="15dp"
+                android:hint="Select Country *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/countryLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/countryHintTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/countryRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/countryLinearLayout">
+
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/contryspinner_regitsration"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_rectanguler_bg"
+                        android:hint="Contry Name"
+                        android:imeOptions="actionNext"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/size_14dp"
+                       >
+
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <ProgressBar
+                        android:id="@+id/progress_contrySpinnerRegistration"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="gone" />
+
+                   </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stateHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/countryLinearLayout"
+                android:layout_marginTop="15dp"
+                android:hint="Select State *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/stateLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stateHintTextView"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/stateRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/statespinner_regitsration"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_rectanguler_bg"
+                        android:hint="State Name"
+                        android:imeOptions="actionNext"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/size_14dp"
+                        >
+
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <ProgressBar
+                        android:id="@+id/progress_stateSpinnerRegistration"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cityHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stateLinearLayout"
+                android:layout_marginTop="15dp"
+                android:hint="Select City *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/cityLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityHintTextView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:gravity="left|center_vertical|center_horizontal|center">
+
+                    <RelativeLayout
+                        android:id="@+id/cityRelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/cityspinner_regitsration"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/edittext_rectanguler_bg"
+                            android:hint="City Name"
+                            android:imeOptions="actionNext"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_purple"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/size_14dp"
+                            >
+
+                        </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                        <ProgressBar
+                            android:id="@+id/progress_citySpinnerRegistration"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:paddingEnd="10dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/pincodeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityLinearLayout"
+                android:layout_marginTop="10dp"
+                android:hint="Pincode no *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp" />
+
+            <EditText
+                android:id="@+id/pincodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pincodeTextView"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:digits="0123456789"
+                android:hint="Pincode"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/size_14dp" />
+
+
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pincodeEditText"
+                android:layout_marginTop="10dp"
+                android:hint="Password *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordfild"
+                sweet:hintEnabled="false"
+                sweet:passwordToggleEnabled="true"
+                android:layout_below="@+id/passwordTextView"
+                sweet:passwordToggleTint="@color/gray">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/edittext_rectanguler_bg"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:paddingStart="@dimen/size_14dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/size_14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/confirmPassTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordfild"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:hint="Confirm Password *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmpass"
+                sweet:hintEnabled="false"
+                sweet:passwordToggleEnabled="true"
+                android:layout_below="@+id/confirmPassTextView"
+                sweet:passwordToggleTint="@color/gray">
+
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/edittext_rectanguler_bg"
+                    android:hint="Confirm Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:paddingStart="@dimen/size_8dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/size_14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progress_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/confirmpass"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:layout_below="@+id/progress_submit"
+                android:background="@drawable/rectanguler_bg"
+                android:gravity="center"
+                android:padding="@dimen/size_10dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/size_14dp"
+                android:textStyle="normal"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

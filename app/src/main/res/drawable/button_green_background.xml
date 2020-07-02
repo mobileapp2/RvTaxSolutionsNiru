@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listview_background_shape">
+    <padding android:top="5dp" android:bottom="5dp"/>
+    <solid android:color="@color/final_purple"/>
+    <corners android:topLeftRadius="@dimen/size_8dp" android:topRightRadius="@dimen/size_8dp" android:bottomLeftRadius="@dimen/size_8dp" android:bottomRightRadius="@dimen/size_8dp"/>
+</shape>

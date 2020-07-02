@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/dark_purple"
+    android:fitsSystemWindows="true"
+    sweet:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/imageViewMenuArrowRelativeLayout"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_2dp">
+
+            <ImageView
+                android:id="@+id/imageViewArrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/size_12dp"
+                android:src="@drawable/ic_arrow_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="iBill"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/sharefileimageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m8"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:layout_toLeftOf="@+id/resetPrinterimageView"
+            android:src="@drawable/share_file_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/resetPrinterimageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m8"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:src="@drawable/printer_setting"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

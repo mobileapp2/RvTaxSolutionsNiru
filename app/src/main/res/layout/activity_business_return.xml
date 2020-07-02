@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <ScrollView
+        android:id="@+id/BR_mailScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="BUSINESS RETURN"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/businessnatureHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileEditText"
+                android:layout_marginTop="15dp"
+                android:hint="Select Business Nature *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/BnatureLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/businessnatureHintTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/BnatureRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BnatureLinearLayout">
+
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/businessnaturespinner_BR"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_rectanguler_bg"
+                        android:hint="Business Nature"
+                        android:imeOptions="actionNext"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/size_14dp"
+                        >
+
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <ProgressBar
+                        android:id="@+id/progress_BnatureSpinner_BR"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tradingnameHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="13dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:layout_below="@+id/BnatureLinearLayout"
+                android:text="Trading Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/BR_trading_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+               android:hint="Trading Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/businessturenoverHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Select Business Turnover *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/businessturenoverLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/businessturenoverHintTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/businessturenoverRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/businessturenoverLinearLayout">
+
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/businessturenoverspinner_BR"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_rectanguler_bg"
+                        android:hint="Business Turnover"
+                        android:imeOptions="actionNext"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/size_14dp"
+                        >
+
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <ProgressBar
+                        android:id="@+id/progress_businessturenoverSpinner_BR"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/itrpurposeHintTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Select ITR Purpose *"
+                android:padding="@dimen/size_2dp"
+                android:textColor="@color/dark_purple"
+                android:textColorHint="@color/dark_purple"
+                android:textSize="@dimen/size_14dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/itrpurposeLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itrpurposeHintTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/itrpurposeRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itrpurposeLinearLayout">
+
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/itrpurposespinner_BR"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_rectanguler_bg"
+                        android:hint="ITR Purpose"
+                        android:imeOptions="actionNext"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_purple"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/size_14dp"
+                        >
+
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <ProgressBar
+                        android:id="@+id/progress_itrpurposeSpinner_BR"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Enter PAN Number *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/BR_pan_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Pan Number"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Enter Aadhar Number *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/BR_aadhar_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Aadhar Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Enter Bank IFSC Code *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/BR_bank_ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Bank IFSC Code"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Bank Account Number *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/BR_account_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Bank Account Number"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Date of Birth *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/BR_bdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Date of Birth"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Address with Pincode"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/BR_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Full Address"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Email ID"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/BR_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Email ID"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Contact Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/BR_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rectanguler_bg"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="14dp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/BR_view_doc_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="3dp"
+                android:text="Required Document List(Click Here)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/BR_submit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectanguler_bg"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_BRmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>
