@@ -78,7 +78,7 @@ public class OnlyTdsRefundActivity extends AppCompatActivity {
                 ActionBar.LayoutParams.MATCH_PARENT,
                 Gravity.CENTER);
         TextView textviewTitle = (TextView) viewActionBar.findViewById(R.id.actionbar_textview);
-        textviewTitle.setText("ITR Salary Return");
+        textviewTitle.setText("ITR Only TDS Refund");
         abar.setCustomView(viewActionBar, params);
         abar.setDisplayShowCustomEnabled(true);
         abar.setDisplayShowTitleEnabled(false);
@@ -97,7 +97,6 @@ public class OnlyTdsRefundActivity extends AppCompatActivity {
         address = (EditText) findViewById(R.id.OTR_address);
         email = (EditText) findViewById(R.id.OTR_email);
         mobile_number = (EditText) findViewById(R.id.OTR_mobile_number);
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroupa_OTR);
 
 
         submit = (Button) findViewById(R.id.OTR_submit);
@@ -118,24 +117,7 @@ public class OnlyTdsRefundActivity extends AppCompatActivity {
 
 
 
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                switch(i) {
-                    case R.id.yes:
-                        // Pirates are the best
-                        army_flag="Yes";
-
-                        break;
-                    case R.id.no:
-                        // Ninjas rule
-                        army_flag="No";
-
-                        break;
-                }
-            }
-        });
 
         pan_number.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -229,12 +211,12 @@ public class OnlyTdsRefundActivity extends AppCompatActivity {
         final String bank_ifsc_code1 = String.valueOf(bank_ifsc_code);
         final String bank_account_number1 = String.valueOf(bank_account_number);
         final String address1 = String.valueOf(address);
-
+        Log.d("demoNiru",""+full_name1);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_MAINSUBMIT,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("demo",""+response);
+                        Log.d("demoNiru",""+response);
                         //Toast.makeText(SignUpActivity.this, "Response : " + " " + response, Toast.LENGTH_LONG).show();
 
                         try{
@@ -357,7 +339,6 @@ public class OnlyTdsRefundActivity extends AppCompatActivity {
                 params.put("adhar_number",addhar_number1);
                 params.put("bank_ifsc",bank_ifsc_code1);
                 params.put("bank_account_number",bank_account_number1);
-                params.put("army_flag",army_flag);
                 params.put("email",email1);
                 params.put("status","pending");
 

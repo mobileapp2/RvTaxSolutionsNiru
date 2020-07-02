@@ -239,50 +239,6 @@
                 android:textSize="14dp" />
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="4dp"
-                android:paddingTop="17dp"
-                android:paddingEnd="4dp"
-                android:paddingBottom="3dp"
-                android:text="Army Servicemen"
-                android:textColor="@color/colorPrimary"
-                android:textSize="13sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-
-                android:paddingRight="@dimen/dimen_10dp">
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/radioGroupa_OTR"
-                    android:layout_height="match_parent">
-
-                    <RadioButton
-                        android:id="@+id/yes"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="Yes(42% off)"
-                        ></RadioButton>
-
-                    <RadioButton
-                        android:id="@+id/no"
-                        android:text="No"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        ></RadioButton>
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-
 
 
 

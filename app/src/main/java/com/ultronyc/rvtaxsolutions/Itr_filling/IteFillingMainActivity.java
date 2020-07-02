@@ -60,7 +60,7 @@ public class IteFillingMainActivity extends AppCompatActivity {
         lstCategory.add(new Category("House Property", "", R.drawable.house_property, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxsolutions.Itr_filling.HousePropertyActivity"));
         lstCategory.add(new Category("Income Tax Notice", "", R.drawable.income_tax, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxsolutions.Income_tax_notice.IncomeTaxNoticeActivity"));
         lstCategory.add(new Category("Capital Gain", "", R.drawable.capital_gain, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxsolutions.Itr_filling.CapitalGainActivity"));
-        lstCategory.add(new Category("Only TDS Refund", "", R.drawable.tds_refund, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxsolutions.Itr_filling.OnlyTdsRefundActivity"));
+        lstCategory.add(new Category("Only TDS Refund", "", R.drawable.tds_return, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxsolutions.Itr_filling.OnlyTdsRefundActivity"));
         //lstCategory.add(new Category("Add User", "", R.drawable.salesman, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxs.AddUserActivity"));
         //lstCategory.add(new Category("User List", "", R.drawable.salesman_list, R.color.white, R.color.text_color1, R.color.text_color2, "com.ultronyc.rvtaxs.UserListActivity"));
 

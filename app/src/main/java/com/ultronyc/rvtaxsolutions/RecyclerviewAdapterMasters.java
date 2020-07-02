@@ -47,7 +47,7 @@ public class RecyclerviewAdapterMasters extends RecyclerView.Adapter<Recyclervie
 
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         
-        holder.img_category_thumbnail.setImageResource(mData.get(position).getThumbnail());
+        holder.img_category_thumbnail1.setImageResource(mData.get(position).getThumbnail());
         
         holder.tv_category_title.setText(this.mData.get(position).getTitle());
         
@@ -118,7 +118,7 @@ public class RecyclerviewAdapterMasters extends RecyclerView.Adapter<Recyclervie
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
-        ImageView img_category_thumbnail;
+        ImageView img_category_thumbnail1;
         RelativeLayout relativeLayout;
         ImageView rightArrow;
         TextView tv_category_title;
@@ -126,7 +126,7 @@ public class RecyclerviewAdapterMasters extends RecyclerView.Adapter<Recyclervie
         public MyViewHolder(View itemView) {
             super(itemView);
             this.tv_category_title = (TextView) itemView.findViewById(R.id.all_cat_title_masters);
-            this.img_category_thumbnail = (ImageView) itemView.findViewById(R.id.all_cat_image_masters);
+            this.img_category_thumbnail1 = (ImageView) itemView.findViewById(R.id.all_cat_image_masters);
             this.rightArrow = (ImageView) itemView.findViewById(R.id.rightArrow_icon_image_masters);
             this.cardView = (CardView) itemView.findViewById(R.id.cardview_masters_main_id);
             this.relativeLayout = (RelativeLayout) itemView.findViewById(R.id.category_relative_layout_masters);
