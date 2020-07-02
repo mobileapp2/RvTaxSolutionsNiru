@@ -237,7 +237,7 @@ public class MyPaymentStatusActivity extends AppCompatActivity {
                             e.printStackTrace();
 
                             //Toast.makeText(SignUpActivity.this, "JSON Exception : " + " " + e.toString(), Toast.LENGTH_SHORT).show();
-                            Log.d("EXCEPTION", "JSON Exception : " + " " + e.toString());
+                            Log.d("EXCEPTION", "JSON Exceptiona : " + " " + e.toString());
 
                             new KAlertDialog(MyPaymentStatusActivity.this, KAlertDialog.ERROR_TYPE)
                                     .setTitleText("Error!")
