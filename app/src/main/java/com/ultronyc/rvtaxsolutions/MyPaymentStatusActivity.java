@@ -219,7 +219,7 @@ public class MyPaymentStatusActivity extends AppCompatActivity {
                                     cata="PROFESSIONAL TAX CERTIFICATE";
                                 }else if(cata.equals("only_tds_refund_master"))
                                 {
-                                    cata="Only TDS Refund";
+                                    cata="Only TDS Refund.";
                                 }
                                 lstCategory.add(new CategoryPaymentList(""+cata, ""+date, ""+amt+"/-", ""+payment_id,""+transactionid,""+process_id,""+status));
 
